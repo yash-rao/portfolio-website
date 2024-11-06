@@ -1,0 +1,100 @@
+.textRoller {
+  background: #282c34;
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #e4bb68;
+  padding: 25px;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.codeLine {
+  display: flex;
+  align-items: center;
+}
+
+.codeText {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.systemText {
+  color: #e4bb68;
+}
+
+.outText {
+  color: #e06c75;
+}
+
+.printlnText {
+  color: #61afef;
+}
+
+.string {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-inline: 10px;
+}
+
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fadeInOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .textRoller {
+    padding: 15px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .codeLine {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .codeText,
+  .string {
+    font-size: 3.5vmin;
+  }
+
+  .textRoller,
+  .string {
+    text-align: left;
+  }
+
+  .string {
+    padding-inline: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textRoller {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .codeText,
+  .string {
+    font-size: 4vmin;
+  }
+}
