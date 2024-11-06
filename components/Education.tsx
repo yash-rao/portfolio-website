@@ -16,9 +16,21 @@ const Education = () => {
       canvas.height = wh;
 
       const partCount = 100;
-      const particles = [];
+      const particles: Array<{
+        color: string;
+        x: number;
+        y: number;
+        direction: { x: number; y: number };
+        vx: number;
+        vy: number;
+        radius: number;
+        float: () => void;
+        changeDirection: (axis: 'x' | 'y') => void;
+        boundaryCheck: () => void;
+        draw: () => void;
+      }> = [];
 
-      function particle() {
+      function particle(this: any) {
         this.color = "rgba(255,255,225," + Math.random() + ")";
         this.x = Math.floor(Math.random() * ww);
         this.y = Math.floor(Math.random() * wh);
@@ -34,7 +46,7 @@ const Education = () => {
           this.x += this.vx * this.direction.x;
           this.y += this.vy * this.direction.y;
         };
-        this.changeDirection = function (axis) {
+        this.changeDirection = function (axis: string | number) {
           this.direction[axis] *= -1;
         };
         this.boundaryCheck = function () {
