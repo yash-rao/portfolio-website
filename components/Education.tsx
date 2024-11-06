@@ -10,6 +10,11 @@ const Education = () => {
       const cloneCtx = clone.getContext("2d");
       const ctx = canvas.getContext("2d");
 
+      if (!ctx || !cloneCtx) {
+        console.error("Failed to get canvas context");
+        return;
+      }
+
       let ww = $(window).width() || 0;
       let wh = $(window).height() || 0;
       canvas.width = ww;

@@ -10,6 +10,10 @@ var Education = function () {
             var clone = document.getElementById("blurCanvasBottom");
             var cloneCtx = clone.getContext("2d");
             var ctx = canvas.getContext("2d");
+            if (!ctx || !cloneCtx) {
+                console.error("Failed to get canvas context");
+                return;
+            }
             var ww = jquery_1["default"](window).width() || 0;
             var wh = jquery_1["default"](window).height() || 0;
             canvas.width = ww;
