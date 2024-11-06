@@ -20,44 +20,47 @@ var Education = function () {
             canvas.height = wh;
             var partCount = 100;
             var particles = [];
-            function particle() {
-                this.color = "rgba(255,255,225," + Math.random() + ")";
-                this.x = Math.floor(Math.random() * ww);
-                this.y = Math.floor(Math.random() * wh);
-                this.direction = {
-                    x: -1 + Math.random() * 2,
-                    y: -1 + Math.random() * 2
-                };
-                this.vx = 0.3 * Math.random();
-                this.vy = 0.3 * Math.random();
-                this.radius = Math.floor(Math.random() * (3 - 2 + 1)) + 2;
-                this.float = function () {
+            var Particle = /** @class */ (function () {
+                function Particle() {
+                    this.color = "rgba(255,255,225," + Math.random() + ")";
+                    this.x = Math.floor(Math.random() * ww);
+                    this.y = Math.floor(Math.random() * wh);
+                    this.direction = {
+                        x: -1 + Math.random() * 2,
+                        y: -1 + Math.random() * 2
+                    };
+                    this.vx = 0.3 * Math.random();
+                    this.vy = 0.3 * Math.random();
+                    this.radius = Math.floor(Math.random() * (3 - 2 + 1)) + 2;
+                }
+                Particle.prototype.float = function () {
                     this.x += this.vx * this.direction.x;
                     this.y += this.vy * this.direction.y;
                 };
-                this.changeDirection = function (axis) {
+                Particle.prototype.changeDirection = function (axis) {
                     this.direction[axis] *= -1;
                 };
-                this.boundaryCheck = function () {
+                Particle.prototype.boundaryCheck = function () {
                     if (this.x >= ww || this.x <= 0)
                         this.changeDirection("x");
                     if (this.y >= wh || this.y <= 0)
                         this.changeDirection("y");
                 };
-                this.draw = function () {
-                    ctx.beginPath();
+                Particle.prototype.draw = function () {
+                    ctx.beginPath(); // Non-null assertion to tell TypeScript it's safe
                     ctx.fillStyle = this.color;
                     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
                     ctx.fill();
                 };
-            }
+                return Particle;
+            }());
             function clearCanvas() {
-                cloneCtx.clearRect(0, 0, ww, wh);
-                ctx.clearRect(0, 0, ww, wh);
+                cloneCtx.clearRect(0, 0, ww, wh); // Non-null assertion
+                ctx.clearRect(0, 0, ww, wh); // Non-null assertion
             }
             function createParticles() {
                 for (var i = 0; i < partCount; i++) {
-                    particles.push(new particle());
+                    particles.push(new Particle());
                 }
             }
             function animateParticles() {
@@ -67,7 +70,7 @@ var Education = function () {
                     p.boundaryCheck();
                     p.draw();
                 });
-                cloneCtx.drawImage(canvas, 0, 0);
+                cloneCtx.drawImage(canvas, 0, 0); // Non-null assertion
                 requestAnimationFrame(animateParticles);
             }
             jquery_1["default"](window).on("resize", function () {
