@@ -62,7 +62,7 @@ const TextRoller = () => {
           <span className='systemText'>System</span>
           <span className='outText'>.out</span>
           <span className='printlnText'>.println</span>
-          ("
+          (&quot;
         </span>
       </div>
       <div className='string'>
@@ -71,7 +71,7 @@ const TextRoller = () => {
         </h1>
       </div>
       <div className='codeLine'>
-        <span className='codeText'>");</span>
+        <span className='codeText'>&quot;);</span>
       </div>
     </div>
   );

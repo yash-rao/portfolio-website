@@ -60,7 +60,7 @@ export default function Contact() {
       </div>
       <div className="contact-section-heading-wrapper">
         <h2 className="section-heading">Contact</h2>
-        <p className="contact-section-subheading">I'd love to hear from you!</p>
+        <p className="contact-section-subheading">I&apos;d love to hear from you!</p>
         <p className="contact-section-tagline">Like the forge of Nidavellir, your mouse is the key—click, drag, and craft a galaxy of possibilities before sending your message.</p>
       </div>
       <div className="contact-content" style={{ position: 'relative', zIndex: 2 }}>
@@ -78,7 +78,7 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label htmlFor="name" className="contact-form-label">What's your name, commander?</label>
+              <label htmlFor="name" className="contact-form-label">What&apos;s your name, commander?</label>
             </div>
             <div className="contact-form-group">
               <span className="contact-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
@@ -91,7 +91,7 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label htmlFor="email" className="contact-form-label">What's the email for your ship?</label>
+              <label htmlFor="email" className="contact-form-label">What&apos;s the email for your ship?</label>
             </div>
             <div className="contact-form-group">
               <span className="contact-icon"><FontAwesomeIcon icon={faFileAlt} /></span>

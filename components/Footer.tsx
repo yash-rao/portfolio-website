@@ -19,7 +19,7 @@ const Footer = () => {
 
       <section className="footer-middle">
         <p>
-        From concept to code, ignited in the fires of Next.js, designed with Figma, and crafted with precision in Visual Studio Code. Aniket's digital fortress, built with the precision of Stark tech.
+        From concept to code, ignited in the fires of Next.js, designed with Figma, and crafted with precision in Visual Studio Code. Aniket&apos;s digital fortress, built with the precision of Stark tech.
         </p>
       </section>
 

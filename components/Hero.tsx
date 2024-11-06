@@ -11,7 +11,7 @@ const Hero = () => {
       <div className='hero-content'>
         <div className="hero-left">
           <TextRoller />
-          <h1 className="hero-title">I'm <strong>Aniket Ahir</strong>.</h1>
+          <h1 className="hero-title">I&apos;m <strong>Aniket Ahir</strong>.</h1>
           <h2 className="hero-subtitle">Software Engineer | Full Stack Developer | Cinephile | Gamer</h2>
           <a href="https://drive.google.com/file/d/1QWsfjDpDpi-DqcVk813lbn5mjs2-7wxI/view" target="_blank" className="resume-button">
             <div className="text-container">
