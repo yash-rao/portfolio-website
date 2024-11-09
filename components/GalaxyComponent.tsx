@@ -49,11 +49,11 @@ interface Dust {
 const GalaxyComponent: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const ctx = useRef<CanvasRenderingContext2D | null>(null);
-
+  
   const mouse: Mouse = {
     pos: {
-      x: window.innerWidth * 0.5,
-      y: window.innerHeight * 0.5,
+      x: typeof window !== "undefined" ? window.innerWidth * 0.5 : 0,
+      y: typeof window !== "undefined" ? window.innerHeight * 0.5 : 0,
     },
     speed: 0,
   };
@@ -191,30 +191,30 @@ const GalaxyComponent: React.FC = () => {
 
     ctx.current.globalCompositeOperation = "source-over";
     ctx.current.fillStyle = "rgba(0,0,0,.05)";
-    ctx.current.fillRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    ctx.current.fillRect(0, 0, canvasRef.current!.width, canvasRef.current!.height);
     ctx.current.globalCompositeOperation = "lighter";
 
-    ctx.current.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    ctx.current.clearRect(0, 0, canvasRef.current!.width, canvasRef.current!.height);
     ctx.current.fillStyle = "#ffffff";
     ctx.current.strokeStyle = "rgba(255,255,255,.05)";
     
     galaxies.forEach(g => {
       g.stars.forEach(s => {
-        ctx.current.beginPath();
-        ctx.current.moveTo(s.x, s.y);
-        ctx.current.arc(s.x, s.y, s.radius, 0, TAU);
-        ctx.current.fill();
+        ctx.current!.beginPath();
+        ctx.current!.moveTo(s.x, s.y);
+        ctx.current!.arc(s.x, s.y, s.radius, 0, TAU);
+        ctx.current!.fill();
       });
       g.dust.forEach(d => {
-        ctx.current.drawImage(d.texture, d.x - (d.size * 0.5), d.y - (d.size * 0.5), d.size, d.size);
+        ctx.current!.drawImage(d.texture, d.x - (d.size * 0.5), d.y - (d.size * 0.5), d.size, d.size);
       });
     });
 
     if (drawingMode && currentGalaxy) {
       ctx.current.beginPath();
       currentGalaxy.stars.forEach(s => {
-        ctx.current.moveTo(s.x, s.y);
-        ctx.current.lineTo(currentGalaxy.x, currentGalaxy.y);
+        ctx.current!.moveTo(s.x, s.y);
+        ctx.current!.lineTo(currentGalaxy!.x, currentGalaxy!.y);
       });
       ctx.current.stroke();
     }
