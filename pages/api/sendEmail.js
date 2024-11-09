@@ -1,24 +1,28 @@
-const nodemailer = require("nodemailer");
-require("dotenv").config();
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 
 // This function handles the contact form submission
-module.exports = async (req, res) => {
+export default async (req, res) => {
   if (req.method !== "POST") {
-    res.status(405).send({ error: "Only POST requests allowed" });
-    return;
+    return res.status(405).json({ error: "Only POST requests allowed" });
   }
 
   const { name, email, subject, message } = req.body;
 
+  // Basic validation for form fields
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Please fill out all fields." });
   }
 
+  // Setup Nodemailer transport
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: process.env.EMAIL_USER,   // Your email address from .env
+      pass: process.env.EMAIL_PASS,   // Your email password or app password
     },
   });
 
@@ -68,9 +72,9 @@ module.exports = async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ success: "Email sent successfully!" });
+    return res.status(200).json({ success: "Email sent successfully!" });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Failed to send email." });
+    console.error("Error sending email: ", error);
+    return res.status(500).json({ error: "Failed to send email." });
   }
 };

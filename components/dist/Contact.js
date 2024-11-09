@@ -76,14 +76,13 @@ function Contact() {
                 case 0:
                     e.preventDefault();
                     setLoading(true); // Set loading state to true
-                    apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/send';
+                    apiUrl = process.env.NEXT_PUBLIC_API_URL;
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 6, 7, 8]);
-                    return [4 /*yield*/, fetch(apiUrl, {
+                    return [4 /*yield*/, fetch("/api/sendEmail", {
                             method: 'POST',
                             headers: {
-                                'Accept': 'application/json',
                                 'Content-Type': 'application/json'
                             },
                             body: JSON.stringify(formData)

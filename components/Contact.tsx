@@ -24,13 +24,12 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true); // Set loading state to true
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/send';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     try {
-      const response = await fetch(apiUrl, {
+      const response = await fetch("/api/sendEmail", {
         method: 'POST',
         headers: {
-          'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
