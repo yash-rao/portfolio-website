@@ -193,7 +193,7 @@ var GalaxyComponent = function () {
         }
     };
     var loop = function () {
-        draw(new MouseEvent('mousemove', { layerX: mouse.pos.x, layerY: mouse.pos.y })); // Fake draw event
+        draw(new MouseEvent('mousemove', { clientX: mouse.pos.x, clientY: mouse.pos.y })); // Fake draw event
         update();
         render();
         window.requestAnimationFrame(loop);
