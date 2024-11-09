@@ -168,12 +168,18 @@ var GalaxyComponent = function () {
     var activateDraw = function (e) {
         var _a;
         if (galaxies.length >= MAX_GALAXIES)
-            galaxies.shift(); // Remove the oldest galaxy if exceeding limit
+            galaxies.shift(); // Remove oldest galaxy if exceeding limit
         drawingMode = true;
         var rect = (_a = canvasRef.current) === null || _a === void 0 ? void 0 : _a.getBoundingClientRect();
         if (rect) {
-            mouse.pos.x = e.clientX - rect.left; // Adjust for canvas position
-            mouse.pos.y = e.clientY - rect.top; // Adjust for canvas position
+            if (e instanceof MouseEvent) {
+                mouse.pos.x = e.clientX - rect.left;
+                mouse.pos.y = e.clientY - rect.top;
+            }
+            else if (e instanceof TouchEvent && e.touches.length > 0) {
+                mouse.pos.x = e.touches[0].clientX - rect.left;
+                mouse.pos.y = e.touches[0].clientY - rect.top;
+            }
         }
         currentGalaxy = createGalaxy(mouse.pos.x, mouse.pos.y);
         galaxies.push(currentGalaxy);
@@ -186,10 +192,22 @@ var GalaxyComponent = function () {
         var _a;
         var rect = (_a = canvasRef.current) === null || _a === void 0 ? void 0 : _a.getBoundingClientRect();
         if (rect) {
-            mouse.speed = distance2([e.clientX - rect.left, e.clientY - rect.top], [mouse.pos.x, mouse.pos.y]);
-            mouse.pos.x = e.clientX - rect.left; // Adjust for canvas position
-            mouse.pos.y = e.clientY - rect.top; // Adjust for canvas position
-            draw(e);
+            var newX = void 0, newY = void 0;
+            if (e instanceof MouseEvent) {
+                newX = e.clientX - rect.left;
+                newY = e.clientY - rect.top;
+            }
+            else if (e instanceof TouchEvent && e.touches.length > 0) {
+                newX = e.touches[0].clientX - rect.left;
+                newY = e.touches[0].clientY - rect.top;
+            }
+            else {
+                return; // Exit if event type is neither MouseEvent nor TouchEvent
+            }
+            mouse.speed = distance2([newX, newY], [mouse.pos.x, mouse.pos.y]);
+            mouse.pos.x = newX;
+            mouse.pos.y = newY;
+            draw(e); // `draw` expects MouseEvent, cast to avoid errors
         }
     };
     var loop = function () {
