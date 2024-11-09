@@ -14,7 +14,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false); // State for loading
   const [toastMessage, setToastMessage] = useState('');
   const [toastType, setToastType] = useState<'success' | 'error' | null>(null);
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -24,8 +24,10 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true); // Set loading state to true
 
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/send';
+
     try {
-      const response = await fetch('http://localhost:5000/send', {
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

@@ -70,16 +70,17 @@ function Contact() {
         });
     };
     var handleSubmit = function (e) { return __awaiter(_this, void 0, void 0, function () {
-        var response, errorResponse, error_1;
+        var apiUrl, response, errorResponse, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     e.preventDefault();
                     setLoading(true); // Set loading state to true
+                    apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/send';
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 6, 7, 8]);
-                    return [4 /*yield*/, fetch('http://localhost:5000/send', {
+                    return [4 /*yield*/, fetch(apiUrl, {
                             method: 'POST',
                             headers: {
                                 'Accept': 'application/json',
