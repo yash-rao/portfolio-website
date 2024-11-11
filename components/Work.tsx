@@ -10,21 +10,9 @@ export default function Work() {
       location: "Tempe, AZ",
       description: [
         "Orchestrated precise input of historical and legal data into Quill platform achieving an exceptional 99.5% accuracy rate",
-        "Played pivotal role in creating 20% more efficient index for Convention’s digital record within Living Repository Initiative, a collaborative venture with Oxford University’s Quill Project, contributing to 15% reduction in project timeline",
+        "Played pivotal role in creating 20% more efficient index in Living Repository Initiative, a collaborative venture with Oxford University, contributing to 15% reduction in project timeline, used Kafka for real-time data streaming and integration",
       ],
-      tags: ["Data Entry", "Data Management", "Collaboration"],
-      logo: "../images/work/asu.png"
-    },
-    {
-      employer: "Arizona State University",
-      title: "Data Research Aide",
-      date: "Nov 2022 – Jan 2023",
-      location: "Tempe, AZ",
-      description: [
-        "Accelerated data filtration and cleaning process for Historical Newspapers Databases with over 18000 data points",
-        "Utilized SQL queries and advanced functionalities for pertinent data acquisition, optimizing collection efficiency by 70%, reducing testing time by over 75% through automated testing and web scraping with Selenium and WebDriver",
-      ],
-      tags: ["SQL", "Data Acquisition", "Selenium", "WebDriver"],
+      tags: ["Python", "Data Migration", "Data Management", "Kafka"],
       logo: "../images/work/asu.png"
     },
     {
@@ -35,10 +23,22 @@ export default function Work() {
       description: [
         "Collaborated with 8-member cross-functional team to design and implement scalable web applications using Spring MVC",
         "Integrated RESTful APIs using OkHttp enabling real-time JSON data retrieval and processing from 100+ API endpoints",
-        "Configured Spring Boot for enhanced application performance, auto-configuration, embedded servers, and production-ready metrics, leading to 25% response time improvement"
+        "Configured Spring Boot for enhanced application performance, auto-configuration, embedded servers, and production-ready metrics, leading to 25% response time improvement, enhanced code quality and maintainability using SonarQube"
       ],
       tags: ["Java", "Spring Boot", "API", "JavaScript"],
       logo: "../images/work/axisray.png"
+    },
+    {
+      employer: "Arizona State University",
+      title: "Data Research Aide",
+      date: "Nov 2022 – Jan 2023",
+      location: "Tempe, AZ",
+      description: [
+        "Accelerated data filtration and cleaning process for Historical Newspapers Databases with over 18000 data points",
+        "Utilized SQL queries and advanced functionalities for pertinent data acquisition, optimizing collection efficiency by 70%, reducing testing time by over 75% through automated testing and web scraping with BeautifulSoup4 and Selenium",
+      ],
+      tags: ["Python", "SQL", "Data Acquisition", "Selenium", "WebDriver"],
+      logo: "../images/work/asu.png"
     },
     {
       employer: "Softvan",
@@ -46,11 +46,11 @@ export default function Work() {
       date: "Mar 2021 – Aug 2021",
       location: "Ahmedabad, Gujarat, India",
       description: [
-        "Engineered Personal Cloud Storage System utilizing Amazon Web Services – S3 Bucket, cutting storage costs by 50% and enhancing system reliability by 75%",
-        "Designed and executed CRUD operations for organization’s cloud, yielding 30% operational efficiency boost and decreased server maintenance costs",
+        "Engineered Personal Cloud Storage System utilizing Amazon Web Services– S3 Bucket, cutting storage costs by 50% and enhancing system reliability by 75%, integrated Jenkins for CI/CD automating build and deployment processes",
+        "Designed and executed CRUD operations for organization’s cloud, yielding 30% operational efficiency boost and decreased server maintenance costs, utilized JIRA for project management and task tracking",
         "Engaged in agile development environment, driving Scrum implementation and fostering collaborative decision-making"
       ],
-      tags: ["AWS", "S3", "CRUD", "Agile", "Scrum"],
+      tags: ["AWS", "S3", "CRUD", "Agile", "CI/CD"],
       logo: "../images/work/softvan.png"
     },
   ];

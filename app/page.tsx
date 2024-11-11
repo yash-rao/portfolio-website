@@ -20,7 +20,6 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer/>
-      
     </div>
   );
 }

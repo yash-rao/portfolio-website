@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faFileAlt, faCommentDots, faPaperPlane, faSpinner, faSpaceShuttle} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope, faFileAlt, faCommentDots, faPaperPlane, faSpinner, faSpaceShuttle, faComment, faMessage, faCrosshairs, faBullseye, faAt, faTowerBroadcast, faTowerCell} from '@fortawesome/free-solid-svg-icons';
 import Toast from './Toast'; // Import the Toast component
 import GalaxyComponent from './GalaxyComponent';
 import { faSpaceAwesome } from '@fortawesome/free-brands-svg-icons';
@@ -79,10 +79,10 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label htmlFor="name" className="contact-form-label">What&apos;s your name, commander?</label>
+              <label htmlFor="name" className="contact-form-label">Commander, your name?</label>
             </div>
             <div className="contact-form-group">
-              <span className="contact-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
+              <span className="contact-icon"><FontAwesomeIcon icon={faAt} /></span>
               <input
                 type="email"
                 name="email"
@@ -92,10 +92,10 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label htmlFor="email" className="contact-form-label">What&apos;s the email for your ship?</label>
+              <label htmlFor="email" className="contact-form-label">Drop Your Signal</label>
             </div>
             <div className="contact-form-group">
-              <span className="contact-icon"><FontAwesomeIcon icon={faFileAlt} /></span>
+              <span className="contact-icon"><FontAwesomeIcon icon={faCrosshairs} /><i className="fas fa-bullseye-arrow    "></i></span>
               <input
                 type="text"
                 name="subject"
@@ -105,10 +105,10 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label htmlFor="subject" className="contact-form-label">Show me our subject...</label>
+              <label htmlFor="subject" className="contact-form-label">Today&apos;s Topic</label>
             </div>
             <div className="contact-form-group">
-              <span className="contact-icon"><FontAwesomeIcon icon={faCommentDots} /></span>
+              <span className="contact-icon"><FontAwesomeIcon icon={faMessage} /></span>
               <textarea
                 className="contact-form-control"
                 rows={1} 
@@ -122,7 +122,7 @@ export default function Contact() {
                 onChange={handleChange} 
                 placeholder=" "
               />
-              <label htmlFor="message" className="contact-form-label">Brief me about our next mission...</label>
+              <label htmlFor="message" className="contact-form-label">Send Your Intel...</label>
             </div>
             <button type="submit" className="contact-submit-button" disabled={loading}>
               {loading ? (
@@ -131,7 +131,7 @@ export default function Contact() {
                 </>
               ) : (
                 <>
-                  Send Transmission <FontAwesomeIcon icon={faSpaceAwesome} />
+                  Send Transmission <FontAwesomeIcon icon={faTowerCell} />
                 </>
               )}
             </button>

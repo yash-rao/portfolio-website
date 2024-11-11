@@ -53,7 +53,6 @@ var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
 var Toast_1 = require("./Toast"); // Import the Toast component
 var GalaxyComponent_1 = require("./GalaxyComponent");
-var free_brands_svg_icons_1 = require("@fortawesome/free-brands-svg-icons");
 function Contact() {
     var _this = this;
     var _a = react_1.useState({ name: '', email: '', subject: '', message: '' }), formData = _a[0], setFormData = _a[1];
@@ -129,31 +128,32 @@ function Contact() {
                         React.createElement("span", { className: "contact-icon" },
                             React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faUser })),
                         React.createElement("input", { type: "text", name: "name", value: formData.name, onChange: handleChange, className: "contact-form-control", placeholder: " ", required: true }),
-                        React.createElement("label", { htmlFor: "name", className: "contact-form-label" }, "What's your name, commander?")),
+                        React.createElement("label", { htmlFor: "name", className: "contact-form-label" }, "Commander, your name?")),
                     React.createElement("div", { className: "contact-form-group" },
                         React.createElement("span", { className: "contact-icon" },
-                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faEnvelope })),
+                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faAt })),
                         React.createElement("input", { type: "email", name: "email", value: formData.email, onChange: handleChange, className: "contact-form-control", placeholder: " ", required: true }),
-                        React.createElement("label", { htmlFor: "email", className: "contact-form-label" }, "What's the email for your ship?")),
+                        React.createElement("label", { htmlFor: "email", className: "contact-form-label" }, "Drop Your Signal")),
                     React.createElement("div", { className: "contact-form-group" },
                         React.createElement("span", { className: "contact-icon" },
-                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faFileAlt })),
+                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faCrosshairs }),
+                            React.createElement("i", { className: "fas fa-bullseye-arrow    " })),
                         React.createElement("input", { type: "text", name: "subject", value: formData.subject, onChange: handleChange, className: "contact-form-control", placeholder: " ", required: true }),
-                        React.createElement("label", { htmlFor: "subject", className: "contact-form-label" }, "Show me our subject...")),
+                        React.createElement("label", { htmlFor: "subject", className: "contact-form-label" }, "Today's Topic")),
                     React.createElement("div", { className: "contact-form-group" },
                         React.createElement("span", { className: "contact-icon" },
-                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faCommentDots })),
+                            React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faMessage })),
                         React.createElement("textarea", { className: "contact-form-control", rows: 1, onInput: function (e) {
                                 var target = e.target;
                                 target.style.height = "auto";
                                 target.style.height = Math.min(target.scrollHeight, 200) + "px";
                             }, name: "message", value: formData.message, onChange: handleChange, placeholder: " " }),
-                        React.createElement("label", { htmlFor: "message", className: "contact-form-label" }, "Brief me about our next mission...")),
+                        React.createElement("label", { htmlFor: "message", className: "contact-form-label" }, "Send Your Intel...")),
                     React.createElement("button", { type: "submit", className: "contact-submit-button", disabled: loading }, loading ? (React.createElement(React.Fragment, null,
                         "Sending Transmission ",
                         React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faSpinner, spin: true }))) : (React.createElement(React.Fragment, null,
                         "Send Transmission ",
-                        React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_brands_svg_icons_1.faSpaceAwesome }))))),
+                        React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faTowerCell }))))),
                 isSent && toastType && (React.createElement(Toast_1["default"], { message: toastMessage, type: toastType, onClose: function () {
                         setToastMessage('');
                         setToastType(null);

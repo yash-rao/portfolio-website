@@ -36,7 +36,7 @@ var TextRoller = function () {
                     if (currentTextIndex === 0) {
                         eraseMode = false;
                         currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
-                        setTimeout(animateText, 2500); // Delay before next greeting
+                        setTimeout(animateText, 500); // Delay before next greeting
                     }
                     else {
                         animateText();

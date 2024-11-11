@@ -95,21 +95,21 @@ var Education = function () {
             react_1["default"].createElement("div", { className: "section-heading" }, "Education"),
             react_1["default"].createElement("div", { className: "education-timeline" }, [
                 {
-                    year: "2022",
+                    year: "2022 - 2024",
                     degree: "Master of Science",
                     major: "Computer Science",
                     institution: "Arizona State University",
                     logo: "../images/edu/asu.png"
                 },
                 {
-                    year: "2018",
+                    year: "2018 - 2022",
                     degree: "Bachelor of Engineering",
                     major: "Computer Engineering",
                     institution: "Gujarat Technological University",
                     logo: "../images/edu/gtu.png"
                 },
                 {
-                    year: "2014",
+                    year: "2018",
                     degree: "High School",
                     major: "",
                     institution: "Rachana School",
