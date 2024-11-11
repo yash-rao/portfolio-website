@@ -25,17 +25,21 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="section-heading">About Me</div>
       <div className="about-container">
-        <div className="about-left">
-          <div className="profile-picture-wrapper">
-            <img src="../images/sample-avatar.jpg" alt="Profile Picture" className="profile-picture" />
-          </div>
-        </div>
-        <div className="about-right">
-          <p className="about-description">
-          My professional journey in software engineering began in 2021, driven by a deep passion for technology and problem-solving. With a Master&apos;s in Computer Software Engineering from Arizona State University and a Bachelor&apos;s in Computer Engineering from Gujarat Technological University, I&apos;ve honed my skills through impactful experiences. At Softvan, I engineered a Personal Cloud Storage System, and at Axisray, I collaborated on designing scalable web applications and integrating RESTful APIs. My role as a Research Assistant at ASU involved working on the Living Repository Initiative with Oxford University, where I improved data accuracy and efficiency. I thrive on transforming complex ideas into elegant solutions, consistently delivering innovative and effective results. My commitment to continuous learning and excellence fuels my drive to push the boundaries of technology.
-          </p>
-        </div>
+  <div className="macos-folder-window">
+    <div className="macos-header">
+      <div className="macos-controls">
+        <span className="macos-button red"></span>
+        <span className="macos-button yellow"></span>
+        <span className="macos-button green"></span>
       </div>
+    </div>
+    <div className="about-description">
+      <p>
+        My professional journey in software engineering began in 2021, driven by a deep passion for technology and problem-solving. With a Master&apos;s in Computer Software Engineering from Arizona State University and a Bachelor&apos;s in Computer Engineering from Gujarat Technological University, I&apos;ve honed my skills through impactful experiences. At Softvan, I engineered a Personal Cloud Storage System, and at Axisray, I collaborated on designing scalable web applications and integrating RESTful APIs. My role as a Research Assistant at ASU involved working on the Living Repository Initiative with Oxford University, where I improved data accuracy and efficiency. I thrive on transforming complex ideas into elegant solutions, consistently delivering innovative and effective results. My commitment to continuous learning and excellence fuels my drive to push the boundaries of technology.
+      </p>
+    </div>
+  </div>
+</div>
       <div className="skills-container">
         {Object.entries(skills).map(([category, items]) => (
           <div key={category}>

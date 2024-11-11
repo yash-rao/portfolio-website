@@ -3,7 +3,6 @@
 // Navbar.tsx
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
-import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -75,12 +74,11 @@ const Navbar = () => {
           <NavLink href="#contact" activePath={activePath} onClick={handleNavLinkClick}>Contact</NavLink>
         </div>
         <div className="toggle-wrapper">
-          {/* <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
-          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         </div>
       </div>
     </nav>

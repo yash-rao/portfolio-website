@@ -1,11 +1,153 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
+/* montserrat-100 - latin */
+/* montserrat-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../public/fonts/montserrat-v29-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-100italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../public/fonts/montserrat-v29-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../public/fonts/montserrat-v29-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../public/fonts/montserrat-v29-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/montserrat-v29-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../public/fonts/montserrat-v29-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/montserrat-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../public/fonts/montserrat-v29-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/montserrat-v29-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../public/fonts/montserrat-v29-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/montserrat-v29-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../public/fonts/montserrat-v29-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/montserrat-v29-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../public/fonts/montserrat-v29-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../public/fonts/montserrat-v29-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../public/fonts/montserrat-v29-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../public/fonts/montserrat-v29-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../public/fonts/montserrat-v29-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 :root {
   /* Color Palette */
   --light-primary: rgb(242, 242, 242);
@@ -75,7 +217,9 @@
   overflow: var(--overflow);
   
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: rgb(1, 15, 39);
@@ -105,7 +249,7 @@ body {
 /* SECTION HEADINGS */
 
 .section-heading {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 600;
   font-size: 4rem;
   position: relative;
@@ -232,80 +376,79 @@ body {
   width: 100%;
 }
 
-.theme-toggle {
-  display: none;
-}
-
-.toggle-label {
-  color: white;
-  cursor: pointer;
-}
-
 .toggle-wrapper {
   display: flex;
   align-items: center;
 }
 
-/* Responsive Design */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* HAMBURGER STYLES */
+.hamburger {
+  cursor: pointer;
+  display: none; /* Initially hidden, only displayed on smaller screens */
+  flex-direction: column;
+  gap: 4px;
+  width: 30px;
+  height: 24px;
+  z-index: 1100; /* Make sure it's above the navbar links */
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Rotate and hide the lines when menu is open */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* Responsive Styling */
 @media (max-width: 768px) {
   .links {
-    display: none;
+    display: none; /* Hide links on smaller screens */
     flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: var(--navbar);
+    top: 50px;
+    right: 0;
+    background: var(--navbar);
+    width: 100%;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 
   .links.open {
     display: flex;
-    margin-top: 1rem;
+    min-height: 20rem;
+    justify-content: space-around;
+    align-items: center; /* Show links when menu is open */
   }
 
   .hamburger {
-    display: block;
-    cursor: pointer;
-    z-index: 1001;
-    margin-left: 1rem;
-    padding: 10px;
+    display: flex; /* Show hamburger menu on smaller screens */
   }
 
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: var(--text);
-    transition: all 0.3s ease;
-  }
-
-  .hamburger:hover span {
-    background-color: var(--primary-color);
-  }
-
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  .toggle-wrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  .dark-mode-toggle {
-    margin-right: 1rem;
+  .logo {
+    font-size: 2rem;
   }
 }
 
@@ -365,7 +508,21 @@ body {
   border-radius: 2%;
   border: 5px solid rgba(255, 255, 255, 0.8);
 }
-
+.hero-photo-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d75e823; /* Blue with 10% opacity */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 2%; /* Match the photo's rounded corners */
+  z-index: 1;
+}
+.hero-photo-wrapper:hover::before {
+  background-color: rgba(0, 0, 255, 0); /* Fully transparent on hover */
+}
 .hero-photo-wrapper::after {
   content: "";
   position: absolute;
@@ -373,10 +530,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 5px solid rgba(255, 255, 255, 0.8);
+  border: 5px solid #2d75e88c;
   backdrop-filter: blur(7px) saturate(180%);
   -webkit-backdrop-filter: blur(7px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #2d75e821;
   pointer-events: none;
   border-radius: 2%;
   transform: translate(20px, 20px);
@@ -385,6 +542,8 @@ body {
 }
 
 .hero-photo-wrapper:hover::after {
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.25);
   transform: translate(15px, 15px);
   transition: 0.2s ease;
 }
@@ -531,74 +690,66 @@ body {
 }
 
 .about-container {
-  align-items: center;
-  margin: 0 auto;
   display: flex;
-  flex-direction: row; /* Changed to row for larger screens */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   width: 100%;
-  max-width: 1400px;
   margin-top: 2rem;
 }
 
-.about-left {
-  flex: 1;
+.macos-folder-window {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff31; /* Light macOS-like background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #010f27; /* Light border */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-right: 2rem;
-  max-width: 400px;
 }
 
-.profile-picture-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin-bottom: 1rem;
-}
-
-.profile-picture {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2%;
-  border: 5px solid rgba(255, 255, 255, 0.8);
-}
-
-.profile-picture-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 5px solid rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(7px) saturate(180%);
-  -webkit-backdrop-filter: blur(7px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.25);
-  pointer-events: none;
-  border-radius: 2%;
-  transform: translate(-15px, 15px);
-  z-index: -1;
-  transition: 0.2s ease;
-}
-
-.profile-picture-wrapper:hover::after {
-  transform: translate(-10px, 10px);
-  transition: 0.2s ease;
-}
-
-.about-right {
-  flex: 1;
+.macos-header {
   display: flex;
-  flex-direction: column; /* Changed to column for better stacking */
   align-items: center;
-  padding-left: 10rem;
+  background-color: #ffffff54; /* macOS header bar color */
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.macos-controls {
+  display: flex;
+  gap: 0.7rem;
+  position: absolute;
+  left: 1rem;
+}
+
+.macos-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.macos-button.red {
+  background-color: #ff5f57;
+}
+
+.macos-button.yellow {
+  background-color: #ffbd2e;
+}
+
+.macos-button.green {
+  background-color: #27c93f;
 }
 
 .about-description {
   font-size: 1.2rem;
   line-height: 1.6;
+  color: #fff;
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
 }
 
 .skills-list ul {

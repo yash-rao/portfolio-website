@@ -13,7 +13,7 @@ const Hero = () => {
           <TextRoller />
           <h1 className="hero-title">I&apos;m <strong>Aniket Ahir</strong>.</h1>
           <h2 className="hero-subtitle">Software Engineer | Full Stack Developer | Cinephile | Gamer</h2>
-          <a href="https://drive.google.com/file/d/1QWsfjDpDpi-DqcVk813lbn5mjs2-7wxI/view" target="_blank" className="resume-button">
+          <a href="https://drive.google.com/file/d/1aL1mLH19l3POSWoJX-VQ2RDhVhRzC-pS/view?usp=sharing" target="_blank" className="resume-button">
             <div className="text-container">
               <span className="text">Resume</span>
               <span className="text">Open</span>
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <div className="hero-right">
           <div className="hero-photo-wrapper">
-            <img src="../images/sample-avatar.jpg" alt="Aniket Ahir" className="hero-photo" />
+            <img src="../images/avatar.jpg" alt="Aniket Ahir" className="hero-photo" />
           </div>
         </div>
       </div>
