@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aniketahir.vercel.app
+
+# Sitemaps
+Sitemap: https://aniketahir.vercel.app/sitemap.xml
