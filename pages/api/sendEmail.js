@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // This function handles the contact form submission
-export default async (req, res) => {
+const sendEmailHandler = async (req, res) => {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Only POST requests allowed" });
   }
@@ -21,8 +21,8 @@ export default async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,   // Your email address from .env
-      pass: process.env.EMAIL_PASS,   // Your email password or app password
+      user: process.env.EMAIL_USER, // Your email address from .env
+      pass: process.env.EMAIL_PASS, // Your email password or app password
     },
   });
 
@@ -78,3 +78,6 @@ export default async (req, res) => {
     return res.status(500).json({ error: "Failed to send email." });
   }
 };
+
+// Named export
+export default sendEmailHandler;
