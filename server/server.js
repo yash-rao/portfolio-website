@@ -25,7 +25,7 @@ app.post("/send", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "ahiraniket22@gmail.com", // Your email address
+    to: "yashbarot770@gmail.com", // Your email address
     subject: `Reachout from ${name} 📬 [Portfolio Contact]`,
     html: `
       <div style="font-family: 'Montserrat', sans-serif; max-width: 700px; margin: auto; background: linear-gradient(135deg, rgba(100, 200, 200, 0.1) 0%, rgba(0, 0, 100, 0.1) 100%); padding: 20px; border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);">
