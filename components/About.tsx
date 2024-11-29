@@ -18,8 +18,8 @@ export default function About() {
     Languages: ["Java", "Python", "C++", "C Sharp", "JavaScript",  "TypeScript", "HTML", "CSS",  "SQL"],
     "Libraries & Frameworks": [
       "Spring Boot", "Hibernate", "Maven", "AngularJS", "ReactJS", "Next.js", "Node.js", "Kafka", "JUnit", "Mocha", "Redux"],
-    Database: ["MySQL", "MongoDB", "PostgreSQL", "AWS", "GCP", "Cassandra"],
-    Tools: ["Git", "GitHub", "Docker", "Kubernetes", "Selenium", "Postman", "Jenkins", "Linux", "SonarQube", "JIRA", "Figma"]
+    Database: ["MySQL", "MongoDB", "PostgreSQL", "AWS", "GCP"],
+    Tools: ["Git", "GitHub", "Docker", "Kubernetes", "Postman", "Jenkins", "Linux"]
   };
   return (
     <section id="about" className="about-section">
@@ -35,7 +35,7 @@ export default function About() {
     </div>
     <div className="about-description">
       <p>
-      I am a passionate and results-driven Software Engineer with a strong foundation in both backend and frontend development. My journey in technology is fueled by a love for problem-solving and continuous innovation. My professional journey in software engineering began in 2021, driven by a deep passion for technology and problem-solving. With a Master&apos;s in Computer Software Engineering from Arizona State University and a Bachelor&apos;s in Computer Engineering from Gujarat Technological University, I&apos;ve honed my skills through impactful experiences. At Softvan, I engineered a Personal Cloud Storage System, and at Axisray, I collaborated on designing scalable web applications and integrating RESTful APIs. My role as a Research Assistant at ASU involved working on the Living Repository Initiative with Oxford University, where I improved data accuracy and efficiency. I thrive on transforming complex ideas into elegant solutions, consistently delivering innovative and effective results. My commitment to continuous learning and excellence fuels my drive to push the boundaries of technology.
+      I’m Yash Barot, a passionate Software Engineer and Full Stack Developer with a strong foundation in cybersecurity, cloud solutions, and AI-driven technologies. Currently pursuing my Master’s in Applied Computer Science at Southeast Missouri State University, I bring a unique blend of academic research and industry experience to my work. With a professional background in Identity and Access Management (IAM) solutions and hands-on expertise in tools like Docker, AWS, and Azure, I specialize in creating secure, scalable, and user-centric applications. My projects, such as an AI-powered job application automation tool and a BLE-based IoT security solution, demonstrate my commitment to innovation and problem-solving. Whether it's developing robust backend architectures, optimizing frontend experiences, or researching cutting-edge technologies like IoT security, I thrive in collaborative environments that drive impactful solutions. My ultimate goal is to build systems that are not only efficient and secure but also elevate user experiences.
       </p>
     </div>
   </div>

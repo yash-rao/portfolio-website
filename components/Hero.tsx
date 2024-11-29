@@ -11,23 +11,23 @@ const Hero = () => {
       <div className='hero-content'>
         <div className="hero-left">
           <TextRoller />
-          <h1 className="hero-title">I&apos;m <strong>Aniket Ahir</strong>.</h1>
-          <h2 className="hero-subtitle">Software Engineer | Full Stack Developer | Cinephile | Gamer</h2>
-          <a href="https://drive.google.com/file/d/1aL1mLH19l3POSWoJX-VQ2RDhVhRzC-pS/view?usp=sharing" target="_blank" className="resume-button">
+          <h1 className="hero-title">I&apos;m <strong>Yash Barot</strong>.</h1>
+          <h2 className="hero-subtitle">Software Engineer | Full Stack Developer| Cyber Security Enthusiast</h2>
+          <a href="https://drive.google.com/file/d/1jjeGyFfgRzq5-Ghu3_xmrqn07Hft_YuF/view?usp=sharing" target="_blank" className="resume-button">
             <div className="text-container">
               <span className="text">Resume</span>
               <span className="text">Open</span>
             </div>
           </a>
           <div className="social-media-icons">
-            <a href="https://www.linkedin.com/in/aniketahir/" target="_blank" className="social-icon linkedin"><i className="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/ahiraniket/" target="_blank" className="social-icon github"><i className="fa-brands fa-github"></i></a>
-            <a href="mailto:aaahir@asu.edu" target="_blank" className="social-icon gmail"><i className="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/1-yash-barot/" target="_blank" className="social-icon linkedin"><i className="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/yashrao/" target="_blank" className="social-icon github"><i className="fa-brands fa-github"></i></a>
+            <a href="mailto:ybarot1s@semo.edu" target="_blank" className="social-icon gmail"><i className="fa-solid fa-envelope"></i></a>
           </div>
         </div>
         <div className="hero-right">
           <div className="hero-photo-wrapper">
-            <img src="../images/avatar.jpg" alt="Aniket Ahir" className="hero-photo" />
+            <img src="../images/avatar.jpg" alt="Yash Barot" className="hero-photo" />
           </div>
         </div>
       </div>

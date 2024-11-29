@@ -4,55 +4,73 @@ import { useEffect, useState } from 'react';
 export default function Work() {
   const workExperiences = [
     {
-      employer: "Arizona State University",
-      title: "Research Assistant - Living Repository",
-      date: "Aug 2023 – May 2024",
-      location: "Tempe, AZ",
+      employer: "Southeast Missouri State University",
+      title: "Graduate Teaching Assistant",
+      date: "Aug 2024 – Current",
+      location: "Cape Girardeau, MO",
       description: [
-        "Orchestrated precise input of historical and legal data into Quill platform achieving an exceptional 99.5% accuracy rate",
-        "Played pivotal role in creating 20% more efficient index in Living Repository Initiative, a collaborative venture with Oxford University, contributing to 15% reduction in project timeline, used Kafka for real-time data streaming and integration",
+        "Supporting professors in course preparation and planning.",
+        "Conducting tutorials, workshops, and graded assignments or exams",
       ],
-      tags: ["Python", "Data Migration", "Data Management", "Kafka"],
-      logo: "../images/work/asu.png"
+      tags: ["Leadership","Time Management"],
+      logo: "../images/work/semo.png"
     },
     {
-      employer: "Axisray",
-      title: "Software Engineer Intern",
-      date: "Jan 2022 – Apr 2022",
-      location: "Ahmedabad, Gujarat, India",
+      employer: "Southeast Missouri State University",
+      title: "Student Research Worker",
+      date: "Jan 2024 – May 2024",
+      location: "Cape Girardeau, MO",
       description: [
-        "Collaborated with 8-member cross-functional team to design and implement scalable web applications using Spring MVC",
-        "Integrated RESTful APIs using OkHttp enabling real-time JSON data retrieval and processing from 100+ API endpoints",
-        "Configured Spring Boot for enhanced application performance, auto-configuration, embedded servers, and production-ready metrics, leading to 25% response time improvement, enhanced code quality and maintainability using SonarQube"
+        "Analyzed Bluetooth traffic to map specific mouse actions (left-click, right-click, scrolling) with corresponding packet values using an nRF52840 Dongle as a sniffer.",
+        "Used an nRF52840 Dongle to capture Bluetooth traffic for a mouse device.",
+        "Explored using ESP32 for potential \"mouse emulation\" or \"wireless mouse spoofing.\""
       ],
-      tags: ["Java", "Spring Boot", "API", "JavaScript"],
-      logo: "../images/work/axisray.png"
+      tags: ["IOT","Python","ESP32","WireShark","C++","Arduino"],
+      logo: "../images/work/semo.png"
     },
     {
-      employer: "Arizona State University",
-      title: "Data Research Aide",
-      date: "Nov 2022 – Jan 2023",
-      location: "Tempe, AZ",
+      employer: "Tata Consultancy Services",
+      title: "Systems Engineer",
+      date: "Jul 2022 – Aug 2023",
+      location: "Gandhinagar, India",
       description: [
-        "Accelerated data filtration and cleaning process for Historical Newspapers Databases with over 18000 data points",
-        "Utilized SQL queries and advanced functionalities for pertinent data acquisition, optimizing collection efficiency by 70%, reducing testing time by over 75% through automated testing and web scraping with BeautifulSoup4 and Selenium",
+        "Worked in Cyber Security Domain provided solutions related to Identity and Access Management",
+        "Developed rules for User Provisioning and De-Provisioning.",
+        "User life cycle state management",
+        "Engaged with SailPoint IdentityNow, providing IAM SaaS Solution.",
+        "Worked on cloud and connectors execution rules.",
+        "Access Profiles and Roles Management",
+        "Created Transform for Identity attributes.",
+        "Automated email sending to bulk set of users through developing PowerShell Script."
       ],
-      tags: ["Python", "SQL", "Data Acquisition", "Selenium", "WebDriver"],
-      logo: "../images/work/asu.png"
+      tags: ["SSO","Data Analytics","XML","SailPoint IdentityNow","Git","Powershell","Apache Velocity","Java","Postman","Azure Active Directory","Active Directory"],
+      logo: "../images/work/tcs.png"
     },
     {
-      employer: "Softvan",
-      title: "Software Development Engineer Intern ",
-      date: "Mar 2021 – Aug 2021",
-      location: "Ahmedabad, Gujarat, India",
+      employer: "Virtually Testing Foundation",
+      title: "Penetration Testing Intern ",
+      date: "Oct 2021 – Dec 2021",
+      location: "CA, USA(Remote)",
       description: [
-        "Engineered Personal Cloud Storage System utilizing Amazon Web Services– S3 Bucket, cutting storage costs by 50% and enhancing system reliability by 75%, integrated Jenkins for CI/CD automating build and deployment processes",
-        "Designed and executed CRUD operations for organization’s cloud, yielding 30% operational efficiency boost and decreased server maintenance costs, utilized JIRA for project management and task tracking",
-        "Engaged in agile development environment, driving Scrum implementation and fostering collaborative decision-making"
+        "Performed vulnerability assessments and penetration testing on 20+ systems using Kali Linux and generated detailed reports for 10+ clients.",
+        "Engaged with the cybersecurity community by participating in 5+ industry events and forums."
       ],
-      tags: ["AWS", "S3", "CRUD", "Agile", "CI/CD"],
-      logo: "../images/work/softvan.png"
+      tags: ["Vulnerability Assessment","Penetration Testing","OWASP Top 10","Burpsuite","Nessus","Kali Linux"],
+      logo: "../images/work/vtf.png"
     },
+    {
+      employer: "CyberEQ.io",
+      title: "Research Intern ",
+      date: "Jul 2021 – Aug 2021",
+      location: "Australia(Remote)",
+      description: [
+        "Actively contributed to teams in Maths/AI/ML, Coding, Astrophysics/Psychology/Cognition, Business Intelligence Analysis, and Cybersecurity",
+        "Engaged in practical and research-based tasks requiring interdisciplinary knowledge and technical skills.",
+        "Demonstrated exceptional written and verbal communication, teamwork, and independent problem-solving abilities."
+      ],
+      tags: ["Cyber Security","Research and Analysis","Communication Skills","Project Management","Team Collaboration","Adaptability and Learning"],
+      logo: "../images/work/cybereq.png"
+    }
   ];
 
   const [activeTab, setActiveTab] = useState(1);

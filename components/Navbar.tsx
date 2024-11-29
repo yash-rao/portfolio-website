@@ -64,7 +64,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolling ? 'colored' : ''}`}>
       <div className="container">
         <div className="logo">
-          <Link href="#home">A.</Link>
+          <Link href="#home">YB.</Link>
         </div>
         <div className={`links ${menuOpen ? 'open' : ''}`}>
           <NavLink href="#about" activePath={activePath} onClick={handleNavLinkClick}>About</NavLink>

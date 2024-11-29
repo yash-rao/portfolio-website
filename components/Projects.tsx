@@ -8,63 +8,30 @@ export default function Projects() {
       <div className="projects-grid">
         {[
           {
-            title: "Employee Performance Tracker",
-            description: "Developed a secure performance tracking system using Java, Spring Boot, and MySQL. The platform features an admin dashboard for real-time insights, reducing evaluation time and employs data analysis to improve accuracy.",
-            tags: ["Java", "Spring Boot", "JavaScript", "MySQL"],
-            githubLink: "https://github.com/ahiraniket/Employee-Performance-Tracker",
-            websiteLink: "",
-            imageUrl: "../images/projects/employeeperformancetracker.png",
+            title: "CodeLights Game",
+            description: "Developed educational coding game where kids have to use code blocks to make traffic light work properly. Build block code editor using blockly and traffic light using canvas.",
+            tags: ["JavaScript", "Blocky","Phasor","Canvas"],
+            githubLink: "https://github.com/yash-rao/CodeLights",
+            websiteLink: "https://yash-rao.github.io/CodeLights/",
+            imageUrl: "../images/projects/codelight.png",
           },
           {
-            title: "API Directory",
-            description: "Created a web application using J2EE, JavaScript, and MySQL, providing access to a customized directory of 250+ APIs. Enhanced application speed and scalability, handling over 1000 requests by optimizing database queries and implementing caching.",
-            tags: ["J2EE", "Spring Boot", "JavaScript", "MySQL"],
-            githubLink: "https://github.com/ahiraniket/api_directory",
+            title: "Fashion Ecommerce Site",
+            description: "Developed a full-stack fashion e-commerce website that offers personalized clothing recommendations based on users' body shapes. Integrated Python Django for backend functionality, including user authentication, dynamic product listings, and order management. Implemented responsive UI using HTML, CSS, and JavaScript, enhancing user experience and enabling seamless navigation across devices. Deployed the site on GitHub Pages for live demonstration and user access.",
+            tags: ["Python","Django","MySQL","HTML","CSS","JavaScript"],
+            githubLink: "https://github.com/yash-rao/IFashion_Ecom_Site",
             websiteLink: "",
-            imageUrl: "../images/projects/apid1.png",
+            imageUrl: "../images/projects/fashion.png",
           },
           
           {
             title: "WeatherNow",
             description: "WeatherNow is a web application that displays real-time weather data for any city, including temperature, weather type, humidity, and wind speed. It uses the OpenWeatherMap API for weather data and the Unsplash API for dynamic city images.",
             tags: ["HTML5", "CSS3", "JavaScript", "API"],
-            githubLink: "https://github.com/ahiraniket/weather-app",
-            websiteLink: "https://ahiraniket.github.io/weather-app/",
+            githubLink: "https://github.com/yash-rao/WEATHER_APP",
+            websiteLink: "",
             imageUrl: "../images/projects/weathernow.png",
           },
-          {
-            title: "To-Do List",
-            description: "Todo List is a web app that helps users manage tasks efficiently. It features task creation, editing, completion tracking, and deletion, with data persistence using local storage. Built with React, it offers a user-friendly interface and responsive design.",
-            tags: ["React", "TypeScript", "HTML5", "CSS3"],
-            githubLink: "https://github.com/ahiraniket/todo-list-app",
-            websiteLink: "https://ahiraniket.github.io/todo-list-app/",
-            imageUrl: "../images/projects/todolist.png",
-          },
-          {
-            title: "Recipe Browser",
-            description: "This Swift-based iOS app allows users to browse dessert recipes, displaying ingredients, measurements, and instructions. It fetches data from the MealDB API, using SwiftUI for UI and MVVM architecture for structure.",
-            tags: ["Swift", "SwiftUI", "URLSession", "MVVM"],
-            githubLink: "https://github.com/ahiraniket/ios-recipe-browser",
-            websiteLink: "",
-            imageUrl: "../images/projects/recipe.png",
-          },
-          {
-            title: "Alexa for Banking",
-            description: "Developed a voice-operated smart assistant for banking tasks using Python, AWS, and NLP techniques. Achieved 80%+ voice recognition accuracy, leveraging NLTK for natural language processing to enhance user experience and automate banking processes.",
-            tags: ["Python", "AWS", "Natural Language Processing"],
-            githubLink: "https://github.com/ahiraniket/ML-projects",
-            websiteLink: "",
-            imageUrl: "../images/projects/alexa.png",
-          },
-          {
-            title: "CineSuggest",
-            description: "Built a movie recommendation system in Python, utilizing Scikit-learn and Pandas. Implemented classification and clustering models, including KNN and Logistic Regression, achieving 85%+ prediction accuracy to provide personalized movie suggestions.",
-            tags: ["Python", "Scikit-learn", "Pandas", "ML"],
-            githubLink: "https://github.com/ahiraniket/ML-projects",
-            websiteLink: "",
-            imageUrl: "../images/projects/cinesuggest.png",
-          },
-          
           
           // Add more projects here...
         ].map((project, index) => (

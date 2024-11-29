@@ -28,7 +28,7 @@ export default async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "ahiraniket22@gmail.com",
+    to: "yashbarot770@gmail.com",
     subject: `Reachout from ${name} 📬 [Portfolio Contact]`,
     html: `<div style="font-family: 'Montserrat', sans-serif; max-width: 700px; margin: auto; background: linear-gradient(135deg, rgba(100, 200, 200, 0.1) 0%, rgba(0, 0, 100, 0.1) 100%); padding: 20px; border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);">
         <!-- Header -->
@@ -65,7 +65,7 @@ export default async (req, res) => {
   
         <!-- Footer Section -->
         <div style="background: linear-gradient(135deg, #1e1e2d, #1f1f30); padding: 15px; border-radius: 0 0 10px 10px; text-align: center; color: #b0d3e8; font-size: 12px;">
-          <p>© 2024 Aniket Ahir Portfolio. All rights reserved.</p>
+          <p>© 2024 Yash Barot Portfolio. All rights reserved.</p>
         </div>
       </div>`,
   };

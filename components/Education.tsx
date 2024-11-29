@@ -130,25 +130,25 @@ const Education = () => {
         <div className="education-timeline">
           {[
             {
-              year: "2022 - 2024",
+              year: "2023 - 2025",
               degree: "Master of Science",
-              major: "Computer Science",
-              institution: "Arizona State University",
-              logo: "../images/edu/asu.png",
+              major: "Applied Computer Science",
+              institution: "Southeast Missouri State University",
+              logo: "../images/edu/semo.png",
             },
             {
               year: "2018 - 2022",
-              degree: "Bachelor of Engineering",
-              major: "Computer Engineering",
-              institution: "Gujarat Technological University",
-              logo: "../images/edu/gtu.png",
+              degree: "Bachelor of Technology",
+              major: "Computer Science & Engineering with Specialization in Cyber Security",
+              institution: "Rashtriya Raksha University",
+              logo: "../images/edu/rru.png",
             },
             {
               year: "2018",
               degree: "High School",
               major: "",
-              institution: "Rachana School",
-              logo: "../images/edu/rachana.png",
+              institution: "Elite Senior Secondary School",
+              logo: "../images/edu/elite.png",
             },
           ].map((edu, index) => (
             <div key={index} className="education-timeline-item">
