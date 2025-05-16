@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aniketahir.vercel.app
+Host: https://portfolio-website-mw7a.vercel.app/
 
 # Sitemaps
-Sitemap: https://aniketahir.vercel.app/sitemap.xml
+Sitemap: https://portfolio-website-mw7a.vercel.app/sitemap.xml
