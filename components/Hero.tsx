@@ -2,6 +2,7 @@ import React from 'react';
 import TextRoller from './TextRoller'; // Adjust the path based on your project structure
 import '../styles/rays.css';
 import '../styles/social-icons.css';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -27,7 +28,13 @@ const Hero = () => {
         </div>
         <div className="hero-right">
           <div className="hero-photo-wrapper">
-            <img src="../images/avatar.jpg" alt="Yash Barot" className="hero-photo" />
+          <Image 
+            src="/images/avatar.jpg" 
+            alt="Yash Barot" 
+            className="hero-photo" 
+            width={200} 
+            height={200}
+          />
           </div>
         </div>
       </div>

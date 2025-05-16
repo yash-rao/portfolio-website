@@ -2,7 +2,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://aniketahir.vercel.app',
+  siteUrl: '',
   // Your domain
   generateRobotsTxt: true,
   // Generates a robots.txt file
