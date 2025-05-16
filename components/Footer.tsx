@@ -20,8 +20,8 @@ const Footer = () => {
       
 
       <section className="footer-bottom">
-        <p>© 2024 All rights reserved.</p>
-        <p>Yash Barot <span>🇮🇳</span></p>
+        <p>© 2025 All rights reserved.</p>
+        <p>Yash Barot</p>
       </section>
     </footer>
   );
