@@ -14,7 +14,7 @@ const Hero = () => {
           <TextRoller />
           <h1 className="hero-title">I&apos;m <strong>Yash Barot</strong>.</h1>
           <h2 className="hero-subtitle">Software Engineer | Full Stack Developer| Cyber Security Enthusiast</h2>
-          <a href="https://drive.google.com/file/d/1jjeGyFfgRzq5-Ghu3_xmrqn07Hft_YuF/view?usp=sharing" target="_blank" className="resume-button">
+          <a href="https://docs.google.com/document/d/1AQjSHL8nA0rojW6mN4V-qrVhA3Gq53pz/edit?usp=sharing&ouid=101192173555009014020&rtpof=true&sd=true" target="_blank" className="resume-button">
             <div className="text-container">
               <span className="text">Resume</span>
               <span className="text">Open</span>
