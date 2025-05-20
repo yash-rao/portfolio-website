@@ -8,32 +8,29 @@ export default function Projects() {
       <div className="projects-grid">
         {[
           {
-            title: "CodeLights Game",
-            description: "Developed educational coding game where kids have to use code blocks to make traffic light work properly. Build block code editor using blockly and traffic light using canvas.",
-            tags: ["JavaScript", "Blocky","Phasor","Canvas"],
-            githubLink: "https://github.com/yash-rao/CodeLights",
-            websiteLink: "https://yash-rao.github.io/CodeLights/",
-            imageUrl: "../images/projects/codelight.png",
+            "title": "Tuberculosis Detection Using Chest X-Ray",
+            "description": "Built an end-to-end deep learning pipeline to detect Tuberculosis (TB) and Pneumonia using transfer learning (ResNet18, ResNet34, DenseNet121) on chest X-ray datasets (DICOM & JPEG). Developed a Streamlit web application for live image upload, model prediction, and Grad-CAM heatmap visualization to improve model transparency. Achieved high AUC-ROC and F1-scores using benchmarking and hyperparameter tuning. Enabled explainable AI with Grad-CAM and evaluated model performance using ROC, F1-score, and Confusion Matrix.",
+            "tags": ["PyTorch", "Streamlit", "Transfer Learning", "Grad-CAM", "Deep Learning"],
+            "githubLink": "https://github.com/yash-rao/Tuberculosis-detection-using-Chest-X-Ray", 
+            "websiteLink": "", 
+            "imageUrl": "../images/projects/tbxray.png"
           },
           {
-            title: "Fashion Ecommerce Site",
-            description: "Developed a full-stack fashion e-commerce website that offers personalized clothing recommendations based on users' body shapes. Integrated Python Django for backend functionality, including user authentication, dynamic product listings, and order management. Implemented responsive UI using HTML, CSS, and JavaScript, enhancing user experience and enabling seamless navigation across devices. Deployed the site on GitHub Pages for live demonstration and user access.",
-            tags: ["Python","Django","MySQL","HTML","CSS","JavaScript"],
-            githubLink: "https://github.com/yash-rao/IFashion_Ecom_Site",
-            websiteLink: "",
-            imageUrl: "../images/projects/fashion.png",
+            "title": "iOS Application (Freelancing Project)",
+            "description": "Developed native iOS apps using Swift, focusing on clean architecture (MVC/MVVM), type safety, and performance optimization. Integrated RESTful APIs, CoreData, and UserDefaults. Used SwiftUI/UIKit for UI and async/await for efficiency. Built and deployed via Xcode, Git, and TestFlight.",
+            "tags": ["Swift", "SwiftUI", "UIKit", "Xcode", "MVVM", "CoreData"],
+            "githubLink": "",
+            "websiteLink": "",
+            "imageUrl": "../images/projects/iosapp.png"
           },
-          
           {
-            title: "WeatherNow",
-            description: "WeatherNow is a web application that displays real-time weather data for any city, including temperature, weather type, humidity, and wind speed. It uses the OpenWeatherMap API for weather data and the Unsplash API for dynamic city images.",
-            tags: ["HTML5", "CSS3", "JavaScript", "API"],
-            githubLink: "https://github.com/yash-rao/WEATHER_APP",
-            websiteLink: "",
-            imageUrl: "../images/projects/weathernow.png",
-          },
-          
-          // Add more projects here...
+            "title": "Ecommerce Microservices Platform (.NET)",
+            "description": "Developed a distributed backend system using .NET 8 Web API with Product, Order, and Auth microservices communicating via RESTful APIs. Implemented JWT-based authentication, used MongoDB/PostgreSQL/Redis for data storage and caching. Containerized services with Docker Compose and validated endpoints via Postman.",
+            "tags": [".NET 8", "Microservices", "JWT", "MongoDB", "Redis", "PostgreSQL", "Docker"],
+            "githubLink": "https://github.com/yash-rao/Microservices_Intercommunication_using_ASP.NET",
+            "websiteLink": "https://github.com/yash-rao/Microservices_Intercommunication_using_ASP.NET",
+            "imageUrl": "../images/projects/ecommerce.png"
+          }
         ].map((project, index) => (
           <CardContainer key={index} className="inter-var">
             <CardBody className="project-card-body">

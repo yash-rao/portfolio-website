@@ -22,7 +22,7 @@ const Hero = () => {
           </a>
           <div className="social-media-icons">
             <a href="https://www.linkedin.com/in/1-yash-barot/" target="_blank" className="social-icon linkedin"><i className="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/yashrao/" target="_blank" className="social-icon github"><i className="fa-brands fa-github"></i></a>
+            <a href="https://github.com/yash-rao/" target="_blank" className="social-icon github"><i className="fa-brands fa-github"></i></a>
             <a href="mailto:ybarot1s@semo.edu" target="_blank" className="social-icon gmail"><i className="fa-solid fa-envelope"></i></a>
           </div>
         </div>
